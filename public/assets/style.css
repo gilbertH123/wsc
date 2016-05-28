@@ -1,0 +1,145 @@
+/*----General-------- */
+body {
+    background: url(./images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*------------ */
+
+/* Main video container */
+#video-box-layout {
+    position: fixed;
+    height:80vh;
+    width: 45vw;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px 1px #000;
+}
+
+/* Video Header */
+#header-layout {
+    background: linear-gradient(blue, deepskyblue );
+    color: white;
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#bigHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+#smallHeader {
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Video */
+#video-layout {
+    font-size: 0px;
+}
+
+video {
+    width: 100%;
+}
+
+/* Video Buttons */
+#control-layout {
+    background: #999;
+    color: white;
+    height: 25vh;
+    clear:both;
+
+}
+
+#videoHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    padding-top: 2%;
+}
+
+.centring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+
+/* ------Buttons layout------ */
+#bg-button{
+    background-color: #4f4f4f;
+    box-shadow: 0 2px 15px 0px #000;
+    border-radius: 50px;
+    height: 7vh;
+    width: 80%;
+
+}
+
+.control-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.5vh;
+    margin-left: 3vw;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+
+}
+
+button:disabled {
+    color: #858585;
+    background-color: #383838;
+}
+
+button:hover:enabled {
+    background-color: red;
+}
+
+button:focus {
+    outline:0;
+}
+
+#btn-play {
+    border: 4px solid darkgray;
+    border-radius: 50%;
+    height: 10vh;
+    width: 5vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#btn-prev {
+    border-radius: 10px 0 0 10px;
+    width: 7vw;
+    margin-right: 5.5vw;
+}
+
+#btn-next {
+    border-radius: 0 10px 10px 0 ;
+    width: 7.5vw;
+    margin-left: 5.5vw;
+}
+
+.selected {
+    background-color:purple;
+}
+
+.unselected {
+    background-color: #3399ff;
+}
+/* ------------------ */
